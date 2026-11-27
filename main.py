@@ -34,7 +34,7 @@ load_dotenv()
 
 APP_NAME = "Qunine API"
 TIMEZONE = ZoneInfo("Asia/Kolkata")
-GROQ_MODEL = os.getenv("GROQ_MODEL", "openai/gpt-oss-20b")
+GROQ_MODEL = os.getenv("GROQ_MODEL", "openai/gpt-oss-200b")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 groq_client = Groq(api_key=GROQ_API_KEY) if GROQ_API_KEY else None
